@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="texgyreadventor-bold.otf">
+            <string>TeXGyreAdventor-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Logo View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LogoViewController" customModule="Logo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyv-2e-1fT" customClass="LogoView" customModule="Logo" customModuleProvider="target">
+                                <rect key="frame" x="87" y="304" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adidas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YtY-Nx-WYN">
+                                        <rect key="frame" x="-25" y="99" width="336" height="154"/>
+                                        <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="100"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YtY-Nx-WYN" firstAttribute="leading" secondItem="wyv-2e-1fT" secondAttribute="leading" constant="-25" id="6MS-WL-OOp"/>
+                                    <constraint firstAttribute="trailing" secondItem="YtY-Nx-WYN" secondAttribute="trailing" constant="-11" id="IGE-lV-kwx"/>
+                                    <constraint firstAttribute="bottom" secondItem="YtY-Nx-WYN" secondAttribute="bottom" constant="47" id="VPC-OR-8Dk"/>
+                                    <constraint firstItem="YtY-Nx-WYN" firstAttribute="top" secondItem="wyv-2e-1fT" secondAttribute="top" constant="99" id="ymF-fp-cc3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wyv-2e-1fT" secondAttribute="bottom" constant="258" id="Noy-uD-FlY"/>
+                            <constraint firstItem="wyv-2e-1fT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="krT-dG-ZE0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wyv-2e-1fT" secondAttribute="trailing" constant="27" id="zAo-HW-kpt"/>
+                            <constraint firstItem="wyv-2e-1fT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="zoz-db-jmh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
